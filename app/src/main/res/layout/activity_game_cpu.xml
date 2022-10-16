@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GameCpuActivity">
+
+    <ImageView
+        android:id="@+id/ivLogo"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_keluar"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/close"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineatas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="200dp" />
+
+    <TextView
+        android:id="@+id/pemain1"
+        style="@style/user"
+        android:layout_marginStart="16dp"
+        android:text="@string/pemain"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="@+id/com"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/com" />
+
+    <ImageView
+        android:id="@+id/iv_batu"
+        style="@style/btn_style"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/batu"
+        android:src="@drawable/ic_batu"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_batucom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_batucom" />
+
+    <ImageView
+        android:id="@+id/iv_kertas"
+        style="@style/btn_style"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/kertas"
+        android:src="@drawable/ic_kertas"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_kertascom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_kertascom" />
+
+    <ImageView
+        android:id="@+id/iv_gunting"
+        style="@style/btn_style"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/gunting"
+        android:src="@drawable/ic_gunting"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_guntingcom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/iv_guntingcom" />
+
+    <TextView
+        android:id="@+id/com"
+        style="@style/user"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:gravity="center"
+        android:text="@string/com"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lineatas" />
+
+    <ImageView
+        android:id="@+id/iv_batucom"
+        style="@style/btn_style"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/batu"
+        android:src="@drawable/ic_batu"
+        app:layout_constraintBottom_toTopOf="@+id/iv_kertascom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/com" />
+
+    <ImageView
+        android:id="@+id/iv_kertascom"
+        style="@style/btn_style"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/kertas"
+        android:src="@drawable/ic_kertas"
+        app:layout_constraintBottom_toTopOf="@+id/iv_guntingcom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_batucom" />
+
+    <ImageView
+        android:id="@+id/iv_guntingcom"
+        style="@style/btn_style"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/gunting"
+        android:src="@drawable/ic_gunting"
+        app:layout_constraintBottom_toTopOf="@id/linebawah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_kertascom" />
+
+    <ImageView
+        android:id="@+id/iv_refresh"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="@string/refresh"
+        android:padding="10dp"
+        android:src="@drawable/ic_refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linebawah" />
+
+    <TextView
+        android:id="@+id/tv_hasil"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:autoSizeTextType="uniform"
+        android:fontFamily="@font/comicsans"
+        android:gravity="center"
+        android:rotation="-17"
+        android:text="@string/vs"
+        android:textColor="@color/merah"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_kertas"
+        app:layout_constraintEnd_toStartOf="@id/iv_kertascom"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/iv_kertas"
+        app:layout_constraintTop_toTopOf="@+id/iv_kertascom"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/linebawah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="622dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
