@@ -32,7 +32,7 @@ class OnBoarding3Fragment : Fragment() {
 
         binding.etName.addTextChangedListener {
             Log.e("Nama", it.toString())
-            if (it.toString().length > 0) {
+            if (it.toString().isNotEmpty()) {
                 binding.btnNext.visibility = View.VISIBLE
             } else {
                 binding.btnNext.visibility = View.GONE

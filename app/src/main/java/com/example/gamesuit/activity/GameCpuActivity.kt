@@ -6,10 +6,8 @@ import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.ImageView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import androidx.core.content.ContextCompat
 import com.bumptech.glide.Glide
 import com.example.gamesuit.until.Callback
 import com.example.gamesuit.until.Controller
@@ -17,9 +15,7 @@ import com.example.gamesuit.R
 import com.example.gamesuit.databinding.ActivityGameCpuBinding
 import com.example.gamesuit.until.CallBackFragment
 import com.example.gamesuit.until.DialogHasilFragment
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
+
 
 @RequiresApi(Build.VERSION_CODES.M)
 @SuppressLint("ResourceAsColor")
