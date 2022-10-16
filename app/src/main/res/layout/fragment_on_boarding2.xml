@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".onboarding.OnBoarding2Fragment">
+
+    <ImageView
+        android:id="@+id/iv_second_page"
+        style="@style/onboardingstyle"
+        tools:ignore="MissingConstraints"
+        android:src="@drawable/ic_onboarding2" />
+
+    <TextView
+        style="@style/landing_menu_text"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_second_page"
+        app:layout_constraintEnd_toEndOf="@+id/iv_second_page"
+        app:layout_constraintStart_toStartOf="@+id/iv_second_page"
+        app:layout_constraintTop_toBottomOf="@+id/iv_second_page" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
